@@ -1,0 +1,12 @@
+// 定义proto使用的版本
+syntax = "proto2";
+//定义包名，在cc文件中调用
+package apollo.cyber.test.proto;
+//定义一个赛博坦人的品牌，名字，描述，已跑公里数，车速
+message Car{
+    optional string brand = 1;
+    optional string name = 2;
+    optional string description = 3; 
+    optional uint64 kilometers = 4;
+    optional uint64 speed = 5;
+};

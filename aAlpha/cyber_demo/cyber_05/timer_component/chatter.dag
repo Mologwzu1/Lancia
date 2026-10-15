@@ -1,0 +1,10 @@
+module_config {
+    module_library : "/opt/apollo/neo/packages/test-dev/local/lib/libchatter.so"
+    timer_components {
+        class_name : "TimerChatterSample"
+        config {
+            name : "timer_chatter"
+            interval : 400
+        }
+    }
+}

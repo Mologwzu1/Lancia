@@ -1,0 +1,12 @@
+module_config {
+    module_library : "/apollo_workspace/bazel-bin/cyber_g/cyber_42/libreader.so"
+    components {
+        class_name : "DritterComponent"
+        config {
+            name : "dritter"
+            readers {
+                channel: "/apollo/dritter"
+            }
+        }
+    }
+ }

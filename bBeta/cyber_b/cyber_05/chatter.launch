@@ -1,0 +1,7 @@
+<cyber>
+    <module>
+        <name>timer_chatter</name>
+        <dag_conf>/opt/apollo/neo/packages/test-dev/local/timer_component/conf/chatter.dag</dag_conf>
+        <process_name>timer_chatter</process_name>
+    </module>
+</cyber>

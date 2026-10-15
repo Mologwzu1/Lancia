@@ -1,0 +1,11 @@
+// 定义proto使用的版本
+syntax = "proto2";
+//定义包名，在cc文件中调用
+package apollo.cyber.test.proto;
+//定义一个赛博坦人的名字，品牌，年龄，描述
+message CarMsg {
+    required string name = 1;
+    optional string brand = 2;
+    optional uint64 age = 3;
+    repeated string description = 4;
+}

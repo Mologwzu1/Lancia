@@ -1,0 +1,10 @@
+module_config {
+    module_library : "/apollo_workspace/bazel-bin/cyber_b/cyber_51/libdriver.so"
+    timer_components {
+        class_name : "TimerDriverSample"
+        config {
+            name : "timer_driver"
+            interval : 200
+        }
+    }
+}

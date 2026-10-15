@@ -1,0 +1,10 @@
+module_config {
+    module_library : "/apollo_workspace/bazel-bin/cyber_th/cyber_52/libdritter_reader.so"
+    timer_components {
+        class_name : "DritterReader"
+        config {
+            name : "dritter_reader"
+            interval : 1000
+        }
+    }
+}

@@ -1,0 +1,7 @@
+<cyber>
+    <module>
+        <name>dritter_writer</name>
+        <dag_conf>/apollo_workspace/cyber_th/cyber_52/dritter_writer.dag</dag_conf>
+        <process_name>dritter_writer</process_name>
+    </module>
+</cyber>

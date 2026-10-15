@@ -1,0 +1,10 @@
+module_config {
+    module_library : "/opt/apollo/neo/packages/test-dev/local/lib/libdriver.so"
+    timer_components {
+        class_name : "TimerDriverSample"
+        config {
+            name : "timer_driver"
+            interval : 200
+        }
+    }
+}

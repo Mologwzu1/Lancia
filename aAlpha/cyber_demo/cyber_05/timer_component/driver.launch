@@ -1,0 +1,7 @@
+<cyber>
+    <module>
+        <name>timer_driver</name>
+        <dag_conf>/opt/apollo/neo/packages/test-dev/local/timer_component/conf/driver.dag</dag_conf>
+        <process_name>timer_driver</process_name>
+    </module>
+</cyber>

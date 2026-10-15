@@ -1,0 +1,15 @@
+<package>
+  <name>cyber_th</name>
+  <version>1.0.0</version>
+  <description>
+  CyberTheta
+  </description>
+  <maintainer email="AD-platform">AD-platform@baidu.com</maintainer>
+  <type>module</type>
+  <src_path>//cyber_th</src_path>
+  <license>BSD</license>
+  <author>Apollo</author>
+  <depend type="binary" src_path="//cyber" repo_name="cyber">cyber-dev</depend>
+  <depend lib_names="protobuf" repo_name="com_google_protobuf">3rd-protobuf-dev</depend>
+  <builder>bazel</builder>
+</package>
