@@ -1,0 +1,31 @@
+#include "cyber_g/gamma/autobot.pb.h"
+#include "cyber/cyber.h"
+#include "cyber/time/rate.h"
+#include "cyber/time/time.h"
+
+using apollo::cyber::Rate;
+using apollo::cyber::Time;
+using apollo::cyber_g::proto::Dritter;
+
+int main(int argc, char *argv[]) {
+    // 初始化一个cyber框架
+    apollo::cyber::Init(argv[0]);
+    // 创建node
+    auto talker_node = apollo::cyber::CreateNode("driver_writer");
+    // 创建writer，写Dritter类型消息
+    auto talker = talker_node->CreateWriter<Dritter>("/apollo/driver");
+    // 创建计时器
+    Rate rate(0.4);
+    static uint64_t seq = 0;
+    while (apollo::cyber::OK() && seq <= 25) {
+        auto msg = std::make_shared<Dritter>();
+        msg->set_write_time(Time::Now().ToNanosecond());
+        msg->set_msg_id(seq++);
+        msg->set_content(std::string("Decepticons ") + std::to_string(seq - 1));
+        talker->Write(msg);
+        AINFO << "/apollo/driver sent message, seq=" << (seq - 1);
+        // 休眠2.5秒，也就是每2.5秒发一次信息。
+        rate.Sleep();
+    }
+    return 0;
+}

@@ -1,0 +1,15 @@
+module_config {
+    module_library : "/opt/apollo/neo/packages/test-dev/local/lib/libcomponent.so"
+    components {
+        class_name : "CommonComponentSample"
+        config {
+            name : "common"
+            readers {
+                channel: "/apollo/driver"
+            }
+            readers {
+                channel: "/apollo/chatter"
+            }
+        }
+    }
+ }

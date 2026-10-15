@@ -1,0 +1,7 @@
+<cyber>
+    <module>
+        <name>timer_driver</name>
+        <dag_conf>/apollo_workspace/cyber_b/cyber_51/driver.dag</dag_conf>
+        <process_name>timer_driver</process_name>
+    </module>
+</cyber>

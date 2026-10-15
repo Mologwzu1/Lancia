@@ -1,0 +1,7 @@
+<cyber>
+    <module>
+        <name>reader</name>
+        <dag_conf>/apollo_workspace/cyber_g/cyber_42/reader.dag</dag_conf>
+        <process_name>reader</process_name>
+    </module>
+</cyber>

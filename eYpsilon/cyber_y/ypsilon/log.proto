@@ -1,0 +1,17 @@
+// 定义proto使用的版本
+syntax = "proto2";
+//定义包名，在cc文件中调用
+package cyber_y.proto;
+//定义消息体
+message Log {
+    optional string node_name = 1;
+    optional uint64 node_id = 2;
+    optional string channel_name = 3;
+    optional uint64 channel_id = 4;
+    optional Role role = 5;
+    optional uint64 exec_time = 6;
+}
+enum Role {
+        WRITER = 0;
+        READER = 1;
+}

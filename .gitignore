@@ -1,0 +1,10 @@
+﻿Kappa/
+Lambda/
+bBeta/records/*
+!bBeta/records/Alpha.record
+*.docx
+*.tar
+*.tar.xz
+*.zip
+*.gz
+*.record
